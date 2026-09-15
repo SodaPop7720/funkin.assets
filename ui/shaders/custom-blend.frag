@@ -143,11 +143,11 @@ vec3 invert(vec3 bg)
 
 vec3 colordodge(vec3 bg, vec3 src)
 {
-  if (all(bg == float3(0.0, 0.0, 0.0)))
+  if (all(bg == vec3(0.0, 0.0, 0.0)))
   {
     return bg;
   }
-  else if (all(src == float3(1.0, 1.0, 1.0)))
+  else if (all(src == vec3(1.0, 1.0, 1.0)))
   {
     return src;
   }
